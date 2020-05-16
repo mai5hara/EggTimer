@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hard_boiled_egg</title>
+    <defs>
+        <path d="M35.1832461,93 C54.5132123,93 70,79.9406595 70,58.2592069 C70,36.5777544 52.739726,0 35.1598174,0 C17.5799087,0 0,36.5777544 0,58.2592069 C0,79.9406595 15.8532798,93 35.1832461,93 Z" id="path-1"></path>
+        <filter x="-8.6%" y="-6.5%" width="117.1%" height="112.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="24.5" cy="24.5" r="24.5"></circle>
+    </defs>
+    <g id="hard_boiled_egg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hard-boiled-egg" transform="translate(15.000000, 4.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Oval" transform="translate(11.000000, 34.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#FFC122" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

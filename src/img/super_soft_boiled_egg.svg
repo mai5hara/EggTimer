@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>surper_soft_boiled_egg</title>
+    <defs>
+        <path d="M34.6806283,92 C53.7344521,92 69,79.0810825 69,57.6327639 C69,36.1844453 51.9863014,0 34.6575342,0 C17.3287671,0 0,36.1844453 0,57.6327639 C0,79.0810825 15.6268044,92 34.6806283,92 Z" id="path-1"></path>
+        <filter x="-8.7%" y="-6.5%" width="117.4%" height="113.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-3" cx="24" cy="24.5" rx="24" ry="24.5"></ellipse>
+    </defs>
+    <g id="surper_soft_boiled_egg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="surper-soft-boiled-egg" transform="translate(15.000000, 4.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Oval" transform="translate(11.000000, 33.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#FF9322" xlink:href="#path-3"></use>
+            </g>
+            <circle id="Oval" fill="#FFFFFF" cx="29.5" cy="38.5" r="1.5"></circle>
+            <path d="M25.1728429,41.1566726 C23.6226371,41.3859697 17.5705864,44.5995244 16.188358,49.7638021 C15.4972438,52.345941 16.8794722,52.345941 17.5705864,51.4852281 C18.2617007,50.6245151 19.6439291,46.3209503 25.1728429,43.7388115 C25.8805669,43.4450119 26.4777809,42.8669635 26.7670548,42.3874751 C27.3252356,41.4622579 26.9132422,40.6480533 25.1728429,41.1566726 Z" id="Path-2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
