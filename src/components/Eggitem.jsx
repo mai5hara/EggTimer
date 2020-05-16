@@ -145,6 +145,12 @@ const TimeLeft = styled.p`
 `;
 
 const Button = styled.button`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
 `;
 
 const ButtonWrap = styled.div`
