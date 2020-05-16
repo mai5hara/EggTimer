@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/EggTimer/precache-manifest.9dbaa2cdc4d3c872a8dbf5f5111527fe.js"
+  "/EggTimer/precache-manifest.03b918d8c38d246151a251806558fe2f.js"
 );
 
 self.addEventListener('message', (event) => {
