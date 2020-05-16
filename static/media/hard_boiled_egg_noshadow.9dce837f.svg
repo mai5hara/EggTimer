@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hard_boiled_egg_noshadow</title>
+    <defs>
+        <circle id="path-1" cx="24.5" cy="24.5" r="24.5"></circle>
+    </defs>
+    <g id="hard_boiled_egg_noshadow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hard-boiled-egg" transform="translate(15.000000, 4.000000)">
+            <path d="M35.1832461,93 C54.5132123,93 70,79.9406595 70,58.2592069 C70,36.5777544 52.739726,0 35.1598174,0 C17.5799087,0 0,36.5777544 0,58.2592069 C0,79.9406595 15.8532798,93 35.1832461,93 Z" id="Oval" fill="#FFFFFF"></path>
+            <g id="Oval" transform="translate(11.000000, 34.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFC122" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

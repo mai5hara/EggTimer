@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>cancel</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="restartbtn">
+            <g id="cancel">
+                <circle id="Oval" fill="#FFFFFF" cx="50" cy="50" r="50"></circle>
+                <polygon id="Rectangle" fill="#BE510F" points="33.3529412 31 71 68.6470588 68.6470588 71 31 33.3529412"></polygon>
+                <polygon id="Rectangle" fill="#BE510F" points="68.6470588 31 31 68.6470588 33.3529412 71 71 33.3529412"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

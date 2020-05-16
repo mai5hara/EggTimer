@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>restartbtn</title>
+    <g id="restartbtn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="restart">
+            <circle id="Oval" fill="#FFFFFF" cx="50" cy="50" r="50"></circle>
+            <g id="Mask" transform="translate(24.000000, 30.000000)" stroke="#BE510F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M4.89022421,16.9177265 C6.98546231,7.40829256 15.9949861,0.0781038764 26.6807004,0.0781038764 C39.0426052,0.0781038764 48.8902242,9.38942463 48.8902242,21.0781039 C48.8902242,32.7667831 39.0426052,42.0781039 26.6807004,42.0781039 C18.9283195,42.0781039 12.2235575,38.3139529 8.24260517,32.7667831" id="Path"></path>
+                <path d="M0.890224214,8.07810388 C0.890224214,8.8624176 5.33466866,18.0781039 5.33466866,18.0781039 L16.8902242,15.9212411" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/EggTimer/static/css/main.035152a4.chunk.css",
+    "main.js": "/EggTimer/static/js/main.02a156df.chunk.js",
+    "main.js.map": "/EggTimer/static/js/main.02a156df.chunk.js.map",
+    "runtime-main.js": "/EggTimer/static/js/runtime-main.9ad13a24.js",
+    "runtime-main.js.map": "/EggTimer/static/js/runtime-main.9ad13a24.js.map",
+    "static/js/2.50adb23f.chunk.js": "/EggTimer/static/js/2.50adb23f.chunk.js",
+    "static/js/2.50adb23f.chunk.js.map": "/EggTimer/static/js/2.50adb23f.chunk.js.map",
+    "index.html": "/EggTimer/index.html",
+    "precache-manifest.9dbaa2cdc4d3c872a8dbf5f5111527fe.js": "/EggTimer/precache-manifest.9dbaa2cdc4d3c872a8dbf5f5111527fe.js",
+    "service-worker.js": "/EggTimer/service-worker.js",
+    "static/css/main.035152a4.chunk.css.map": "/EggTimer/static/css/main.035152a4.chunk.css.map",
+    "static/js/2.50adb23f.chunk.js.LICENSE.txt": "/EggTimer/static/js/2.50adb23f.chunk.js.LICENSE.txt",
+    "static/media/cancelbtn.svg": "/EggTimer/static/media/cancelbtn.103cc9b6.svg",
+    "static/media/egg.svg": "/EggTimer/static/media/egg.87014108.svg",
+    "static/media/hard_boiled_egg.svg": "/EggTimer/static/media/hard_boiled_egg.e7e769c8.svg",
+    "static/media/hard_boiled_egg_noshadow.svg": "/EggTimer/static/media/hard_boiled_egg_noshadow.9dce837f.svg",
+    "static/media/pausebtn.svg": "/EggTimer/static/media/pausebtn.b45d680f.svg",
+    "static/media/restartbtn.svg": "/EggTimer/static/media/restartbtn.28d245cd.svg",
+    "static/media/soft_boiled_egg.svg": "/EggTimer/static/media/soft_boiled_egg.edd88281.svg",
+    "static/media/soft_boiled_egg_noshadow.svg": "/EggTimer/static/media/soft_boiled_egg_noshadow.ce281a76.svg",
+    "static/media/startbtn.svg": "/EggTimer/static/media/startbtn.6bdee429.svg",
+    "static/media/super_hard_boiled_egg.svg": "/EggTimer/static/media/super_hard_boiled_egg.e2710ec1.svg",
+    "static/media/super_hard_boiled_egg_noshadow.svg": "/EggTimer/static/media/super_hard_boiled_egg_noshadow.c2546409.svg",
+    "static/media/super_soft_boiled_egg.svg": "/EggTimer/static/media/super_soft_boiled_egg.596b12f6.svg",
+    "static/media/super_soft_boiled_egg_noshadow.svg": "/EggTimer/static/media/super_soft_boiled_egg_noshadow.cf88d52f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ad13a24.js",
+    "static/js/2.50adb23f.chunk.js",
+    "static/css/main.035152a4.chunk.css",
+    "static/js/main.02a156df.chunk.js"
+  ]
+}
