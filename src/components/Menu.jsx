@@ -109,15 +109,10 @@ const Container = styled.div`
     justify-content: center;
     background-color: #FFB356;
 
-    @media ${device.mobileM} {
+    @media ${device.laptop} {
         height: 100vh;
-        padding: 1.5rem 0;
     }
 
-    @media ${device.mobileL} {
-        height: 100vh;
-        padding: 0;
-    }
 `;
 
 const Wrap = styled.div`
