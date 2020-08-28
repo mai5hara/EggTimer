@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/EggTimer/static/css/main.035152a4.chunk.css",
-    "main.js": "/EggTimer/static/js/main.23b37d32.chunk.js",
-    "main.js.map": "/EggTimer/static/js/main.23b37d32.chunk.js.map",
+    "main.js": "/EggTimer/static/js/main.1ea59edf.chunk.js",
+    "main.js.map": "/EggTimer/static/js/main.1ea59edf.chunk.js.map",
     "runtime-main.js": "/EggTimer/static/js/runtime-main.9ad13a24.js",
     "runtime-main.js.map": "/EggTimer/static/js/runtime-main.9ad13a24.js.map",
-    "static/js/2.1826b26b.chunk.js": "/EggTimer/static/js/2.1826b26b.chunk.js",
-    "static/js/2.1826b26b.chunk.js.map": "/EggTimer/static/js/2.1826b26b.chunk.js.map",
+    "static/js/2.6ada9d44.chunk.js": "/EggTimer/static/js/2.6ada9d44.chunk.js",
+    "static/js/2.6ada9d44.chunk.js.map": "/EggTimer/static/js/2.6ada9d44.chunk.js.map",
     "index.html": "/EggTimer/index.html",
-    "precache-manifest.de6ef4000067aa49ec0b9c9feee04218.js": "/EggTimer/precache-manifest.de6ef4000067aa49ec0b9c9feee04218.js",
+    "precache-manifest.912400f07adaf1c69fa49517ade6504c.js": "/EggTimer/precache-manifest.912400f07adaf1c69fa49517ade6504c.js",
     "service-worker.js": "/EggTimer/service-worker.js",
     "static/css/main.035152a4.chunk.css.map": "/EggTimer/static/css/main.035152a4.chunk.css.map",
-    "static/js/2.1826b26b.chunk.js.LICENSE.txt": "/EggTimer/static/js/2.1826b26b.chunk.js.LICENSE.txt",
+    "static/js/2.6ada9d44.chunk.js.LICENSE.txt": "/EggTimer/static/js/2.6ada9d44.chunk.js.LICENSE.txt",
     "static/media/cancelbtn.svg": "/EggTimer/static/media/cancelbtn.103cc9b6.svg",
     "static/media/egg.svg": "/EggTimer/static/media/egg.87014108.svg",
     "static/media/hard_boiled_egg.svg": "/EggTimer/static/media/hard_boiled_egg.e7e769c8.svg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9ad13a24.js",
-    "static/js/2.1826b26b.chunk.js",
+    "static/js/2.6ada9d44.chunk.js",
     "static/css/main.035152a4.chunk.css",
-    "static/js/main.23b37d32.chunk.js"
+    "static/js/main.1ea59edf.chunk.js"
   ]
 }
