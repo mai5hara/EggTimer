@@ -1,14 +1,10 @@
 const initState = {
     seconds: 0,
     isRunning: false
-    // secondsEgg2: 20
 }
 
-const Timer = (state=initState, action) => {
-    console.log(action)
-    // console.log(action.payload)
-    console.log(state)
-    switch(action.type) {
+const Timer = (state = initState, action) => {
+    switch (action.type) {
         case 'RUN_TIMER':
             return {
                 seconds: action.payload,

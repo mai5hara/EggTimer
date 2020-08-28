@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-// import { connect } from 'react-redux';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Startbtn from '../img/startbtn.svg';
@@ -10,128 +9,6 @@ import SuperSoftBoiledEggNoshadow from '../img/super_soft_boiled_egg_noshadow.sv
 import SoftBoiledEggNoshadow from '../img/soft_boiled_egg_noshadow.svg';
 import SuperHardBoiledEggNoshadow from '../img/super_hard_boiled_egg_noshadow.svg';
 import HardBoiledEggNoshadow from '../img/hard_boiled_egg_noshadow.svg';
-
-const EggItem = ({location}) => {
-    console.log(location)
-
-    const {seconds} = location.state;
-
-    const [timeLeft, setTimeLeft] = useState(seconds);
-    const [isRunning, setIsRunning] = useState(location.toggleRun);
-
-    console.log(seconds)
-    console.log(timeLeft)
-    console.log(isRunning)
-
-    const now = Date.now();
-    const then = now + seconds * 1000;           
-
-    const displayTimeLeft = (seconds) => {
-        let minutesLeft = Math.floor(seconds / 60);
-        let secondsLeft = seconds % 60;
-    
-        minutesLeft = minutesLeft.toString().length === 1 ? '0' + minutesLeft : minutesLeft;
-        secondsLeft = secondsLeft.toString().length === 1 ? '0' + secondsLeft : secondsLeft;
-        console.log(minutesLeft)
-        console.log(secondsLeft)
-        return `${minutesLeft}:${secondsLeft}`;
-    }
-
-    const resetIime = () => {
-        setTimeLeft(displayTimeLeft(seconds));
-    }
-
-    useEffect(() => {
-        !isRunning && setTimeLeft(displayTimeLeft(seconds))
-
-    },[seconds])
-
-    useEffect(() => {
-        console.log(isRunning)
-        if(isRunning) {
-            
-            const countDown = setInterval(() => {
-                const secondsLeft = Math.round((then - Date.now()) / 1000);
-                console.log(secondsLeft)
-                if(secondsLeft < 0) {
-                    clearInterval(countDown);
-                    console.log('done');
-                    return;
-                }
-                setTimeLeft(displayTimeLeft(secondsLeft));
-            },1000);
-            return () => clearInterval(countDown)
-        }
-        return undefined;
-    }, [isRunning]);
-
-    const showTitle = (path) => {
-        switch (path) {
-            case '/SurperSoftBiledEgg':
-                return <h1>Super Soft Biled Egg</h1>;
-            case '/SoftBiledEgg':
-                return <h1>Soft Biled Egg</h1>;
-            case '/SurperHardBiledEgg':
-                return <h1>Super Hard Biled Egg</h1>;
-            case '/HardBiledEgg':
-                return <h1>Hard Biled Egg</h1>;
-            default:
-                return <h1>Egg Timer</h1>;
-        }
-    }
-
-    const showImage = (path) => {
-        switch (path) {
-            case '/SurperSoftBiledEgg':
-                return <img width="auto" height="30%" src={SuperSoftBoiledEggNoshadow} alt="SuperSoftBoiledEggNoshadow"/>;
-            case '/SoftBiledEgg':
-                return <img width="auto" height="30%" src={SoftBoiledEggNoshadow} alt="SoftBoiledEggNoshadow"/>;
-            case '/SurperHardBiledEgg':
-                return <img width="auto" height="30%" src={SuperHardBoiledEggNoshadow} alt="SuperHardBoiledEggNoshadow"/>;
-            case '/HardBiledEgg':
-                return <img width="auto" height="30%" src={HardBoiledEggNoshadow} alt="HardBoiledEggNoshadow"/>;
-            default:
-                return <h1>Egg Timer</h1>;
-        }
-    }
-
-    console.log(timeLeft)
-
-    return (
-        <Container>
-            <H1>{showTitle(location.pathname)}</H1>
-            {showImage(location.pathname)}
-            <TimeLeft>{timeLeft}</TimeLeft>
-            <ButtonWrap>
-                <Button onClick={() => {resetIime()}} disabled={isRunning}>
-                    <img width="50%" height="auto" src={Restartbtn} alt="Restartbtn"/>
-                </Button>
-                { isRunning ? (
-                    <Button onClick={() => {setIsRunning(false)}}>
-                        <img width="70%" height="auto" src={Pausebtn} alt="Pausebtn"/>
-                    </Button>
-                ) : (
-                    <Button onClick={() => {setIsRunning(true)}}>
-                        <img width="70%" height="auto" src={Startbtn} alt="Startbtn"/>
-                    </Button>
-                )}
-                <Link to="/">
-                <Button>
-                    <img width="50%" height="auto" src={Cancelbtn} alt="Cancelbtn"/>
-                </Button></Link>
-            </ButtonWrap>
-        </Container>
-    )
-};
-
-// const mapStateToProps = state => {
-//     return {
-//         seconds: state.seconds,
-//         toggleRun: state.toggleRun
-//     }
-// }
-
-export default EggItem;
 
 const H1 = styled.h1`
     text-align: center;
@@ -182,3 +59,108 @@ const Egg = styled.div`
         background-color: #FFC3B4;
     }
 `;
+
+const EggItem = ({ location }) => {
+
+    const { seconds } = location.state;
+
+    const [timeLeft, setTimeLeft] = useState(seconds);
+    const [isRunning, setIsRunning] = useState(location.toggleRun);
+
+    const now = Date.now();
+    const then = now + seconds * 1000;
+
+    const displayTimeLeft = (seconds) => {
+        let minutesLeft = Math.floor(seconds / 60);
+        let secondsLeft = seconds % 60;
+
+        minutesLeft = minutesLeft.toString().length === 1 ? '0' + minutesLeft : minutesLeft;
+        secondsLeft = secondsLeft.toString().length === 1 ? '0' + secondsLeft : secondsLeft;
+
+        return `${minutesLeft}:${secondsLeft}`;
+    }
+
+    const resetIime = () => {
+        setTimeLeft(displayTimeLeft(seconds));
+    }
+
+    useEffect(() => {
+        !isRunning && setTimeLeft(displayTimeLeft(seconds))
+
+    }, [seconds])
+
+    useEffect(() => {
+        if (isRunning) {
+
+            const countDown = setInterval(() => {
+                const secondsLeft = Math.round((then - Date.now()) / 1000);
+                if (secondsLeft < 0) {
+                    clearInterval(countDown);
+                    console.log('done');
+                    return;
+                }
+                setTimeLeft(displayTimeLeft(secondsLeft));
+            }, 1000);
+            return () => clearInterval(countDown)
+        }
+        return undefined;
+    }, [isRunning]);
+
+    const showTitle = (path) => {
+        switch (path) {
+            case '/SuperSoftBoiledEgg':
+                return <h1>Super Soft Boiled Egg</h1>;
+            case '/SoftBoiledEgg':
+                return <h1>Soft Boiled Egg</h1>;
+            case '/SuperHardBoiledEgg':
+                return <h1>Super Hard Boiled Egg</h1>;
+            case '/HardBoiledEgg':
+                return <h1>Hard Boiled Egg</h1>;
+            default:
+                return <h1>Egg Timer</h1>;
+        }
+    }
+
+    const showImage = (path) => {
+        switch (path) {
+            case '/SuperSoftBoiledEgg':
+                return <img width="auto" height="30%" src={SuperSoftBoiledEggNoshadow} alt="SuperSoftBoiledEggNoshadow" />;
+            case '/SoftBoiledEgg':
+                return <img width="auto" height="30%" src={SoftBoiledEggNoshadow} alt="SoftBoiledEggNoshadow" />;
+            case '/SuperHardBoiledEgg':
+                return <img width="auto" height="30%" src={SuperHardBoiledEggNoshadow} alt="SuperHardBoiledEggNoshadow" />;
+            case '/HardBoiledEgg':
+                return <img width="auto" height="30%" src={HardBoiledEggNoshadow} alt="HardBoiledEggNoshadow" />;
+            default:
+                return <h1>Egg Timer</h1>;
+        }
+    }
+
+    return (
+        <Container>
+            <H1>{showTitle(location.pathname)}</H1>
+            {showImage(location.pathname)}
+            <TimeLeft>{timeLeft}</TimeLeft>
+            <ButtonWrap>
+                <Button onClick={() => { resetIime() }} disabled={isRunning}>
+                    <img width="50%" height="auto" src={Restartbtn} alt="Restartbtn" />
+                </Button>
+                {isRunning ? (
+                    <Button onClick={() => { setIsRunning(false) }}>
+                        <img width="70%" height="auto" src={Pausebtn} alt="Pausebtn" />
+                    </Button>
+                ) : (
+                        <Button onClick={() => { setIsRunning(true) }}>
+                            <img width="70%" height="auto" src={Startbtn} alt="Startbtn" />
+                        </Button>
+                    )}
+                <Link to="/">
+                    <Button>
+                        <img width="50%" height="auto" src={Cancelbtn} alt="Cancelbtn" />
+                    </Button></Link>
+            </ButtonWrap>
+        </Container>
+    )
+};
+
+export default EggItem;

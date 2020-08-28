@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { runTimer } from './store/actions/timerActions';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -9,78 +9,6 @@ import SoftBoiledEgg from '../img/soft_boiled_egg.svg';
 import SuperHardBoiledEgg from '../img/super_hard_boiled_egg.svg';
 import HardBoiledEgg from '../img/hard_boiled_egg.svg';
 import egg from '../img/egg.svg';
-
-
-const Menu = () => {
-
-    return (
-        <Container>
-            <H1>Egg Timer</H1>
-            <EggImage><img width="45%" height="auto" src={egg} alt="egg"/></EggImage>
-            <Wrap>
-                <Link to={{
-                    pathname: '/SurperSoftBiledEgg',
-                    state: {
-                        seconds: 300
-                    }
-                }} className="link_color">
-                    <Egg>
-                        <img width="auto" height="auto" src={SuperSoftBoiledEgg} alt="SuperSoftBoiledEgg"/>
-                        <EggType>Super Soft Biled Egg</EggType>
-                    </Egg>
-                </Link>
-                <Link to={{
-                    pathname: '/SoftBiledEgg',
-                    state: {
-                        seconds: 480
-                    }
-                }} className="link_color">
-                    <Egg>
-                        <img width="auto" height="auto" src={SoftBoiledEgg} alt="SoftBoiledEgg"/>
-                        <EggType>Soft Biled Egg</EggType>
-                    </Egg>
-                </Link>
-                <Link to={{
-                    pathname: '/HardBiledEgg',
-                    state: {
-                        seconds: 600
-                    }
-                }} className="link_color">
-                    <Egg>
-                        <img width="auto" height="auto" src={HardBoiledEgg} alt="HardBoiledEgg"/>
-                        <EggType>Hard Biled Egg</EggType>
-                    </Egg>
-                </Link>
-                <Link to={{
-                    pathname: '/SurperHardBiledEgg',
-                    state: {
-                        seconds: 720
-                    }
-                }} className="link_color">
-                    <Egg>
-                        <img width="auto" height="auto" src={SuperHardBoiledEgg} alt="SuperHardBoiledEgg"/>
-                        <EggType>Super Hard Biled Egg</EggType>
-                    </Egg>
-                </Link>
-            </Wrap>
-        </Container>
-    )
-};
-
-const mapStateToProps = state => {
-    return {
-        seconds: state.seconds,
-        toggleRun: state.toggleRun
-    }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        runTimer: (seconds) => dispatch(runTimer(seconds))
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Menu);
 
 const H1 = styled.h1`
     text-align: center;
@@ -131,7 +59,7 @@ const Wrap = styled.div`
         height: auto;
         margin-bottom:1.5rem;
     }
-`; 
+`;
 
 const Egg = styled.div`
     display:flex;
@@ -154,3 +82,74 @@ const EggType = styled.p`
     margin-top: 0.5rem;
     font-size: 0.9rem;
 `;
+
+const Menu = () => {
+
+    return (
+        <Container>
+            <H1>Egg Timer</H1>
+            <EggImage><img width="45%" height="auto" src={egg} alt="egg" /></EggImage>
+            <Wrap>
+                <Link to={{
+                    pathname: '/SuperSoftBoiledEgg',
+                    state: {
+                        seconds: 300
+                    }
+                }} className="link_color">
+                    <Egg>
+                        <img width="auto" height="auto" src={SuperSoftBoiledEgg} alt="SuperSoftBoiledEgg" />
+                        <EggType>Super Soft Boiled Egg</EggType>
+                    </Egg>
+                </Link>
+                <Link to={{
+                    pathname: '/SoftBoiledEgg',
+                    state: {
+                        seconds: 480
+                    }
+                }} className="link_color">
+                    <Egg>
+                        <img width="auto" height="auto" src={SoftBoiledEgg} alt="SoftBoiledEgg" />
+                        <EggType>Soft Boiled Egg</EggType>
+                    </Egg>
+                </Link>
+                <Link to={{
+                    pathname: '/HardBoiledEgg',
+                    state: {
+                        seconds: 600
+                    }
+                }} className="link_color">
+                    <Egg>
+                        <img width="auto" height="auto" src={HardBoiledEgg} alt="HardBoiledEgg" />
+                        <EggType>Hard Boiled Egg</EggType>
+                    </Egg>
+                </Link>
+                <Link to={{
+                    pathname: '/SuperHardBoiledEgg',
+                    state: {
+                        seconds: 720
+                    }
+                }} className="link_color">
+                    <Egg>
+                        <img width="auto" height="auto" src={SuperHardBoiledEgg} alt="SuperHardBoiledEgg" />
+                        <EggType>Super Hard Boiled Egg</EggType>
+                    </Egg>
+                </Link>
+            </Wrap>
+        </Container>
+    )
+};
+
+const mapStateToProps = state => {
+    return {
+        seconds: state.seconds,
+        toggleRun: state.toggleRun
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        runTimer: (seconds) => dispatch(runTimer(seconds))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Menu);

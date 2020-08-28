@@ -8,10 +8,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/" exact component={Menu} />
-        <Route path="/SurperSoftBiledEgg" component={EggItem}/>
-        <Route path="/SoftBiledEgg" component={EggItem}/>
-        <Route path="/SurperHardBiledEgg" component={EggItem}/>
-        <Route path="/HardBiledEgg" component={EggItem}/>
+        <Route path="/SuperSoftBoiledEgg" component={EggItem} />
+        <Route path="/SoftBoiledEgg" component={EggItem} />
+        <Route path="/SuperHardBoiledEgg" component={EggItem} />
+        <Route path="/HardBoiledEgg" component={EggItem} />
       </Switch>
     </div>
   );
