@@ -6,9 +6,9 @@ This is a timer application for making a different types of boiled eggs.
 
 You can make your favorite type of boild egg to using this application.<br>
 
-![eggtimer_readme](https://user-images.githubusercontent.com/44576047/90951498-55e67e00-e410-11ea-80a3-99ac4eeee531.jpg) <br>
+![eggtimer_1](https://user-images.githubusercontent.com/44576047/91605331-227e8480-e925-11ea-8f2a-883c9033d25a.jpg)
 
-![eggtimer_readme2](https://user-images.githubusercontent.com/44576047/90951506-70b8f280-e410-11ea-9265-93d92c30be6c.jpg)
+![eggtimer_2](https://user-images.githubusercontent.com/44576047/91605339-25797500-e925-11ea-8ddd-f2e32d4b5674.jpg)
 
 Visit here
 https://mai5hara.github.io/EggTimer/
